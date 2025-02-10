@@ -1,4 +1,4 @@
-package lesson1_2.levelC.с2;
+package lesson1_2.levelC.c2;
 
 
 public class Run {
