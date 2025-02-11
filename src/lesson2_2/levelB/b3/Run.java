@@ -8,12 +8,12 @@ import java.util.Scanner;
 public class Run {
     public static void main(String[] args) {
         printinfo();
-        int a = new Scanner(System.in).nextInt();
+        double a = new Scanner(System.in).nextDouble();
         printinfo();
-        int b = new Scanner(System.in).nextInt();
+        double b = new Scanner(System.in).nextDouble();
         printinfo();
-        int c = new Scanner(System.in).nextInt();
-        int discriminant = (b * b) - (4 * a * c);
+        double c = new Scanner(System.in).nextDouble();
+        double discriminant = (b * b) - (4 * a * c);
         if (discriminant > 0) {
             System.out.println("Дискриминант положительный, поэтому уравнение имеет два различных корня.");
             double root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
@@ -23,7 +23,7 @@ public class Run {
             System.out.println("Дискриминант отрицательный, корней нет");
         } else {
             System.out.println("Дискриминант равен нулю — корень будет один");
-            double root3 = (-b + Math.sqrt(discriminant)) / (2 * a);
+            double root3 = (-b / (2 * a));
             System.out.println("Корень равен: " + root3);
         }
     }
